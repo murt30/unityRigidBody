@@ -24,5 +24,6 @@ public class ApplyForceScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision){
         print("ouch");
+        collision.transform.position += Vector3.down;
     }
 }
